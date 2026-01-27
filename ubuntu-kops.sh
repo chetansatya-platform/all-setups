@@ -13,3 +13,4 @@ chmod +x ./kops
 sudo mv ./kops /usr/local/bin/kops
 kops version
 export KOPS_STATE_STORE=s3://chetan.k8s
+kops create cluster --name chetan.k8s.local --zones us-east-1a --master-size t3.small --node-size t3.micro --master-count 1 --node-count 2
