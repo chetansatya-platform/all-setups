@@ -12,4 +12,4 @@ curl -Lo kops https://github.com/kubernetes/kops/releases/download/$(curl -s htt
 chmod +x ./kops
 sudo mv ./kops /usr/local/bin/kops
 kops version
-export KOPS_STATE_STORE=S3://chetan.k8s
+export KOPS_STATE_STORE=s3://chetan.k8s
